@@ -1,0 +1,19 @@
+all:
+  site:
+    script_version: 1
+
+  sendmail:
+      host: smtp.station.cz
+      port: 587
+      username: 
+      password: 
+
+  emails:
+    lead: [vitekt@email.cz]
+
+  cache:
+      type: <?php echo $_SERVER['HTTP_HOST'] == 'www.vychodoceskahypoteka.cz' ? 'xcache' : 'apc' ?>
+
+dev:
+  emails:
+    lead: [vitekt@email.cz]

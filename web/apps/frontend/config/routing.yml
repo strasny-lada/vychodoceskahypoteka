@@ -1,0 +1,11 @@
+homepage:
+  url:   /
+  param: { module: default, action: homepage }
+
+lead_process:
+  url:   /lead/process
+  param: { module: default, action: leadProcess }
+
+clear_cache:
+  url:   /cc
+  param: { module: system, action: clearCache }

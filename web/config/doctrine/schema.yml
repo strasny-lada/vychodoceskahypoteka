@@ -1,0 +1,8 @@
+Lead:
+  actAs:
+    Timestampable: ~
+  columns:
+    type: { type: string(32), notnull: true }
+    amount: { type: integer, notnull: true }
+    name: { type: string(128), notnull: true }
+    contact: { type: string(128), notnull: true }

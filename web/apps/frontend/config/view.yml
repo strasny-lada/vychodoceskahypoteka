@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+    X-UA-Compatible: IE=edge
+
+  metas:
+    title:        Východočeská hypotéka
+    description:
+    viewport:     width=device-width, initial-scale=1
+    robots:       index, follow
+
+  stylesheets:    [ main?v<?php echo sfConfig::get('app_site_script_version') ?> ]
+
+  javascripts:    [ main?v<?php echo sfConfig::get('app_site_script_version') ?> ]
+
+  has_layout:     true
+  layout:         layout
