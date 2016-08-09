@@ -10,9 +10,9 @@ t/
 tr/
 sf/
 data/
-log/
+/log/
 log.old/
-cache/
+/cache/
 !lib/cache/
 config/databases.yml
 data/search/
