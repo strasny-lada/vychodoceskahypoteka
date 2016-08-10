@@ -1,2 +1,2 @@
 homepageSuccess:
-  javascripts: [ //ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js, lead?v<?php echo sfConfig::get('app_site_script_version') ?>: { async: async } ]
+  javascripts: [lead?v<?php echo sfConfig::get('app_site_script_version') ?>: { async: async } ]

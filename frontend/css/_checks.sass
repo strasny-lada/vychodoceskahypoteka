@@ -1,0 +1,78 @@
+.checks
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+    +media(768px)
+        margin-top: 90px
+
+.check
+    +clearfix
+    padding: 0
+
+    &:before
+        content: ''
+        display: inline-block
+        height: 100%
+        vertical-align: middle
+        margin-left: -.05em
+
+.check + .check
+    margin-top: 30px
+
+
+.check > div,
+.check > span
+    display: block
+    text-align: center
+
+    +media(768px)
+        display: inline-block
+        vertical-align: middle
+
+.check > div
+    +media(768px)
+        width: 90px
+        text-align: right
+        margin-right: 30px
+
+.check > span
+    color: $color--brown
+    @extend %AvenirBold
+
+    +media(768px)
+        max-width: 160px
+        text-align: left
+
+    +media(1024px)
+        min-width: 200px
+
+.check svg
+    display: inline-block
+    font-size: .1px
+    height: auto
+
+.check--pardubice svg
+    width: 1.5*85px
+    height: 1.5*55px
+
+.check--best svg
+    width: 1.5*52px
+    height: 1.5*65px
+
+.check--meeting svg
+    width: 1.5*70px
+    height: 1.5*55px
+
++media(768px)
+    .check--pardubice svg
+        width: 85px
+        height: 55px
+
+    .check--best svg
+        width: 52px
+        height: 65px
+
+    .check--meeting svg
+        width: 70px
+        height: 55px

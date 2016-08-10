@@ -1,0 +1,155 @@
+.floor--grey
+    background: $color--grey
+
+.floor--brown
+    background: $color--brown
+
+.floor--stripe
+    padding: 20px 0
+    color: $color--white
+    text-transform: uppercase
+    text-align: center
+
+    p
+        @extend h3
+
+    a.button
+        margin: 1em 0 0
+
+    +media(768px)
+        padding: 50px 0
+        text-align: left
+
+        p
+            float: left
+            padding-top: 20px
+
+        a.button
+            float: right
+            margin: 0 // 0 1em
+
+.floor__inner
+    +clearfix
+    margin: 0 auto
+    max-width: 1440px
+    //width: 300px
+    width: 90%
+
+    +media(480px)
+        width: 400px
+
+    +media(640px)
+        width: 600px
+
+    +media(768px)
+        width: 700px
+
+    +media(1024px)
+        width: 960px
+
+    +media(1280px)
+        width: 1080px
+
+.floor--padded .floor__inner
+    padding-right: 20px
+    padding-left: 20px
+
+    +media(768px)
+        padding-right: 40px
+        padding-left: 40px
+
+    +media(1280px)
+        padding-right: 90px
+        padding-left: 90px
+
+.floor--stripe .floor__inner
+    padding-right: 0
+    padding-left: 0
+
+    +media(1024px)
+        padding-left: 40px
+        padding-right: 40px
+
+    +media(1280px)
+        padding-right: 90px
+        padding-left: 90px
+
+#floor--1
+    background: #f6f6f6 url(../img/header.jpg) no-repeat 50% 0
+    background-size: cover
+    position: relative
+
+    .floor__inner
+        padding-top: 35.5%
+        padding-bottom: 15.5%
+
+    .scrolldown
+        display: none
+        +size(50px 75px)
+        border-radius: 500px
+        border: 3px solid $color--brown
+        position: absolute
+        bottom: 30px
+        left: 50%
+        margin-left: -25px
+
+        +media(768px)
+            display: block
+
+        svg
+            //content: ''
+            display: block
+            +size(22px)
+            @extend .icon--scroll
+            background: url(../img/sprite.svg) no-repeat
+            position: absolute
+            top: 15px
+            left: 11px
+
+        &:hover svg
+            +animation(scrolldown 1s infinite)
+
+@keyframes scrolldown
+    from
+        +transform(translateY(0))
+
+    to
+        +transform(translateY(20px))
+
+#floor--2
+    text-align: center
+
+
+#floor--4
+    overflow: hidden
+    h2
+        text-align: center
+
+#floor--5
+    border-bottom: 1px solid rgba($color--grey--dark, .25)
+    text-align: center
+    overflow: hidden
+
+    h2
+        text-align: center
+
+    +media(768px)
+        text-align: left
+
+#floor--2,
+#floor--4,
+#floor--5,
+#floor--6,
+#floor--7
+    padding-top: 40px
+
+    +media(640px)
+        padding-top: 90px
+
+#floor--5,
+#floor--6,
+#floor--7
+    padding-bottom: 40px
+
+    +media(640px)
+        padding-bottom: 90px

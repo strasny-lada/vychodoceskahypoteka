@@ -35,6 +35,23 @@
         <div class="form__row form__row--margin-bottom<?php echo $form['contact']->hasError() ?  ' form_row--error' : '' ?>">
             <?php echo $form['contact']->render(array('placeholder' => 'Telefon nebo e-mail')) ?>
         </div>
+
+        <?php
+        /*
+         * EDIT - start
+         * - taby se ted uz nechovaji jako taby, ale jen jako ovladani pro 2 radio buttony
+         * - zatim jen staticke inputy pro kontrolu chovani JS
+         * - po otestovani zmenit tridu obalovace na .hidden, tim se inputy schovaji
+         * */
+        ?>
+
+        <div class="_hidden">
+            <input type="radio" name="hypoType" id="hypoType_1" value="kupuji" checked>
+            <input type="radio" name="hypoType" id="hypoType_2" value="refinancuji">
+        </div>
+
+        <?php // EDIT - konec ?>
+
         <div class="form__row form__row--submit"><?php /* pro zobrazeni staci oddelat tridu .hidden */ ?>
             <?php $fieldMessages = array() ?>
             <?php foreach(array('name','contact') as $field): ?>
@@ -42,7 +59,7 @@
                     <?php $fieldMessages[] = $form[$field]->getError()->getMessage() ?>
                 <?php endif ?>
             <?php endforeach ?>
-            
+
             <?php if (count($fieldMessages)): ?>
                 <div class="form__layer--error">
                     <?php foreach($fieldMessages as $fieldMessage): ?>
@@ -50,7 +67,7 @@
                     <?php endforeach ?>
                 </div>
             <?php endif ?>
-            
+
             <button type="submit" class="button">Odeslat</button><span class="button__info">Chci získat nezávaznou&nbsp;konzultaci!</span>
         </div><?php /* pro zobrazeni staci oddelat tridu .hidden */ ?>
         <?php if ($sf_user->hasFlash('form_successful')): ?>

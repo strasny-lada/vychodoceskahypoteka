@@ -1,0 +1,177 @@
+.news
+    +clearfix
+
+.news__item
+    display: block
+    position: relative
+    background: $color--white
+    //border-bottom-color: $color--grey--dark
+    //border-bottom-width: 3px
+    //border-bottom: 3px solid $color--grey--dark
+    color: $color--black
+    text-decoration: none
+    overflow: hidden
+    margin-bottom: 2em
+
+    &:hover
+        text-decoration: underline
+
++media(640px)
+    .news__item
+        float: left
+        width: calc(33.3% - 27px)
+        padding-top: 0
+        margin-bottom: 0
+
+    .news__item + .news__item
+        margin-left: 40px
+
+.news__item__title
+    @extend %card
+    text-transform: none
+    font-size: 1em
+    margin-bottom: 0
+    font-weight: normal
+    border-color: $color--grey--dark
+    @extend %AvenirDemi
+    position: relative
+    z-index: 2
+
+    +media(max-width 767px)
+        padding-top: 18px
+
+.news__item__cover
+    //position: absolute
+    //top: 0
+    //left: 0
+    display: block
+    max-width: 100%
+    width: 100%
+    //margin-bottom: 20px
+    +transform-origin(50% 50%)
+    +transform(scale(1))
+    +transition(transform, opacity 13px, .4s ease-in)
+    backface-visibility: hidden
+
+.news__item:hover .news__item__cover
+    +transform(scale(1.1))
+
+
+// detail
+.news__details.hidden
+    opacity: 0
+    display: none
+
+.news__details
+    +transition(opacity .3s)
+    width: 100%
+    display: block
+    opacity: 1
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba($color--black, .8)
+    z-index: 10
+    height: 100%
+
+    padding-top: 60px
+
+    +media(768px)
+        padding-top: 100px
+
+    +media(1280px)
+        padding-top: 140px
+
+.news__details__item.hidden
+    opacity: 0
+    display: none
+
+.news__details__item
+    position: absolute
+    left: 50%
+    +transform(translateX(-50%))
+    width: 90%
+    max-width: 900px
+    background: $color--white
+    display: block
+    opacity: 1
+    +transition(opacity, .3s)
+
+
+
+.news__detail__close
+    position: absolute
+    top: 0
+    right: 0
+    +transform(translateY(-100%))
+    +transition(background-color)
+    +transition-duration(.6s)
+    background: $color--brown
+    display: block
+    +size(40px)
+
+    +media(768px)
+        +size(60px)
+
+    +media(1280px)
+        +size(90px)
+
+    svg
+        position: absolute
+        top: 50%
+        left: 50%
+        //+transform(translate(-50%, -50%))
+        margin: -10px 0 0 -10px
+        backface-visibility: hidden
+        +transform-origin(50%)
+        +transition(transform opacity)
+        +transition-duration(.3s)
+        opacity: .8
+
+    &:hover
+        background: $color--brown--alt
+        svg
+            //+trasform(translate(-50%, -50%) rotate(-180deg))
+            margin: -10px 0 0 -10px
+            opacity: 1
+            +transform(rotate(-90deg))
+
+.news__cover__image
+    display: block
+    margin: 0
+    width: 100%
+    max-width: 100%
+    height: auto
+
+.news__content
+    padding: 20px
+    position: relative
+
+    +media(768px)
+        padding: 60px
+
+    +media(1280px)
+        padding: 90px
+
+.news__content__title
+    margin-bottom: 10px
+    margin-left: -20px
+    padding-right: 20px
+    padding-left: 20px
+    width: 100%
+
+    +media(768px)
+        position: absolute
+        bottom: 100%
+        color: $color--white
+
+        margin-bottom: 60px
+        margin-left: -60px
+        padding-right: 60px
+        padding-left: 60px
+
+    +media(1280px)
+        margin-bottom: 90px
+        margin-left: -90px
+        padding-right: 90px
+        padding-left: 90px

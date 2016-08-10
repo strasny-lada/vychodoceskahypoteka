@@ -1,0 +1,57 @@
+.header--top
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 2
+    background: $color--white
+
+    +media(768px)
+        background: transparent
+
+.header__inner
+    +clearfix
+    margin: 0 auto
+    width: 100%
+    //+media(640px)
+    //    width: 600px
+    //
+    +media(768px)
+        width: 700px
+
+    +media(1024px)
+        width: 960px
+
+    +media(1280px)
+        width: 1080px
+
+    //+media(1024px)
+    //    padding: 50px 0 //35px
+
+.logo
+    color: $color--brown
+    text-transform: uppercase
+    @extend %AvenirBold
+    display: inline-block
+    text-decoration: none
+    padding: 25px 22px
+    background: $color--white
+    +transition(background-color .5s ease-out)
+    position: relative
+    z-index: 5
+    width: 100%
+
+    +media(768px)
+        width: auto
+
+    +media(1024px)
+        padding: 50px 40px
+        float: left
+
+    &:hover
+        background-color: rgba($color--white, .3)
+
+.logo span
+    @extend %AvenirMedium
+    display: inline-block
+    margin-left: 5px

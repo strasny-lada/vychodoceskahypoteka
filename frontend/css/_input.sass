@@ -1,0 +1,26 @@
+.label,
+input[type="text"]
+    color: $color--black
+    padding: 20px 50px 17px
+    font-size: 1rem
+    @extend %AvenirDemi
+    outline: none
+    display: block
+    width: 100%
+
+.label
+    display: block
+
+input[type="text"]
+    background: $color--grey
+    //color: rgba($color--black, .5)
+    border: 0
+
+
+@media screen and (max-width: 480px)
+    .label
+        text-align: center
+
+    input[type="text"]
+        padding-right: 25px
+        padding-left: 25px

@@ -1,0 +1,31 @@
+.button
+    display: inline-block
+    position: relative
+    border: 2px solid $color--brown
+    color: $color--brown
+    padding: 15px 25px
+    text-transform: uppercase
+    text-decoration: none
+    font-size: .75em
+    +transition(color, background-color .2s, .3s)
+    @extend %AvenirBold
+    background: transparent
+    cursor: pointer
+
+    &:hover
+        background-color: $color--brown
+        color: $color--white
+
+
+    +media(768px)
+        font-size: 1em
+        padding: 25px 35px 22px
+
+.button--white
+    border-color: $color--white
+    color: $color--white
+    background: transparent
+
+    &:hover
+        background-color: $color--white
+        color: $color--brown

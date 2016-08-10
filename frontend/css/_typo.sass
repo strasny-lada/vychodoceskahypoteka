@@ -1,0 +1,98 @@
+@font-face
+    font-family: 'AvenirMedium'
+    src: url('../fonts/avenir-medium.woff') format('woff')
+
+@font-face
+    font-family: 'AvenirDemi'
+    src: url('../fonts/avenir-demi.woff') format('woff')
+
+@font-face
+    font-family: 'AvenirBold'
+    src: url('../fonts/avenir-bold.woff') format('woff')
+
+%AvenirMedium
+    font-family: 'AvenirMedium', Arial, sans-serif
+
+%AvenirDemi
+    font-family: 'AvenirDemi', Arial, sans-serif
+
+%AvenirBold
+    font-family: 'AvenirBold', Arial, sans-serif
+
+
+.container
+    @extend %AvenirMedium
+    color: $color--black
+
+.container *
+    -webkit-font-smoothing: antialiased
+
+h1, .h1, h2, .h2, h3, .h3, strong
+    @extend %AvenirBold
+    font-weight: normal
+
+h1, .h1, h2, .h2, h3, .h3
+    margin-top: 0
+    text-transform: uppercase
+    display: block
+
+h1, .h1, .headline
+    font-size: rem(30px)
+    text-transform: uppercase
+
+.headline
+    line-height: 1.2em
+    text-transform: uppercase
+    font-size: rem(30px)
+    margin-bottom: 1em
+
+    +media(640px)
+        font-size: rem(40px)
+
+    +media(1024px)
+        font-size: rem(60px)
+
+.subheadline
+    color: $color--brown
+    display: block
+
+h2, .h2
+    margin-bottom: 1.5em
+
+    +media(768px)
+        font-size: rem(18px)
+
+    +media(1024px)
+        font-size: rem(24px)
+
+h3, .h3
+    font-size: rem(20px)
+    margin-bottom: 1em
+
+p, li
+    margin-top: 0
+    line-height: 28px
+
+    &:last-of-type
+        margin-bottom: 0
+
+%list--inline
+    list-style-type: none
+    margin-left: 0
+    padding: 0
+    +clearfix
+
+    li
+        float: left
+        padding: 0
+
+%list--unstyled
+    list-style-type: none
+    margin-left: 0
+    padding: 0
+
+    li
+        padding: 0
+
+%color--brown
+    color: $color--brown

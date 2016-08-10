@@ -1,0 +1,139 @@
+.nav--top
+    @extend %AvenirBold
+    +transform(translateY(-130%))
+    +transition(transform 300ms)
+    position: absolute
+    width: 100%
+    background: $color--white
+
+    +media(768px)
+        +transform(translateY(0))
+        float: right
+        width: auto
+        position: relative
+        background: transparent
+
+    +media(1281px)
+        margin-right: -40px
+
+.nav--top--active
+    +transform(translateY(0))
+
+.nav--top__list
+    margin: 0
+    list-style-type: none
+    padding: 0
+    +clearfix
+
+    li
+        display: block
+
+    +media(768px)
+        li
+            float: left
+
+
+//.nav--top__list__item
+//    float: left
+
+.nav--top__list__item__link
+    display: block
+    text-transform: uppercase
+    color: $color--brown
+    text-decoration: none
+    padding: 15px 20px
+    text-align: right
+    position: relative
+
+    +media(768px)
+        padding: 20px 20px
+        text-align: center
+
+    +media(1024px)
+        padding: 45px 45px
+
+    &:hover
+        color: $color--black
+
+        +media(768px)
+            .nav--top__list__item__link__moto
+                opacity: 1
+                color: $color--brown
+
+
+.nav--top__list__item__link__moto
+    font-size: rem(14px)
+    display: block
+    @extend %AvenirMedium
+    width: 150px
+    opacity: 0
+    +transition(opacity .3s)
+    text-transform: none
+    position: absolute
+    left: 50%
+    top: 52px
+    +transform(translateX(-50%))
+    line-height: normal
+
+    +media(1024px)
+        top: 80px
+
+.nav--mobile
+    position: absolute
+    right: 10px
+    top: 12px
+    +size(40px 40px)
+    background: $color--white
+    text-decoration: none
+    z-index: 10
+    //+transform(translateY(30px))
+
+    +media(768px)
+        display: none
+        opacity: 0
+
+    &:hover
+        .line
+            background: lighten($color--brown, 10%)
+
+    span
+        display: block
+
+    .text
+        @extend %visually-hide
+
+    .line
+        position: absolute
+        width: 40%
+        height: 2px
+        border-radius: 50px
+        top: 50%
+        left: 50%
+        background: $color--brown
+        +transition(all .3s ease-in)
+
+    .line--1
+        +transform(translate(-50%, -350%))
+    .line--2
+        +transform(translate(-40%, -50%))
+        width: 50%
+    .line--3
+        +transform(translate(-50%, 250%))
+
+    //&.header__nav--visible
+    //    +media(1024px)
+    //        .cssanimations &
+    //            +animation(menuHide2 .5s .7s forwards)
+    //        .no-cssanimations &
+    //            opacity: 1
+    //            +transform(translate(0, 30px))
+
+    &.nav--mobile--active
+        .line--1
+            +transform(translate(-50%, -50%) rotate(-45deg))
+
+        .line--2
+            width: 0
+
+        .line--3
+            +transform(translate(-50%, -50%) rotate(45deg))

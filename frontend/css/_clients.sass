@@ -1,0 +1,31 @@
+.clients
+    margin-bottom: 90px
+
+.client
+    opacity: .15
+    +transition(opacity, border-color .8s, .5s )
+    @extend %card
+    @extend %AvenirDemi
+
+.slick-active
+    .client
+        opacity: 1
+        border-bottom-color: $color--grey--dark
+
+.client__text
+    display: block
+    margin-bottom: 2em !important
+    padding-top: 20px
+
+    &:before
+        content: '"'
+        display: block
+        font-size: 80px
+        color: $color--brown--alt
+        font-style: italic
+        @extend %AvenirDemi
+        text-indent: -.2em
+        margin-bottom: -.15em
+
+.client__author
+    color: $color--brown

@@ -1,0 +1,24 @@
+%card
+    background: $color--white
+    border-bottom: 2px solid transparent
+    padding: 20px 20px 15px
+    //font-weight: bold
+    line-height: 28px
+
+    +media(768px)
+        padding: 20px 30px
+        border-bottom-width: 4px
+
+    +media(1024px)
+        padding: 45px 60px
+
+%visually-hide
+    border: 0
+    // Modern syntax for clip used - intentially not supporting ie7
+    clip: rect(0, 0, 0, 0)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+    width: 1px

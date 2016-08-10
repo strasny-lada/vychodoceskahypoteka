@@ -1,0 +1,71 @@
+.questions
+    @extend %list--unstyled
+    @extend %AvenirBold
+    @extend .h2
+    margin-bottom: 2em
+    padding: .25em 0
+    text-transform: none
+
+    li + li
+        margin-top: 10px
+
+
+.benefits
+    @extend %list--unstyled
+    @extend %AvenirDemi
+
+    li
+        display: block
+        margin-bottom: 40px
+
+    .icon
+        margin: 0 auto 25px
+
+    .icon--house
+        width: 145px
+        height: 104px
+
+    .icon--pig
+        width: 116px
+        height: 81px
+        margin: 10px auto 38px
+
+    .icon--price
+        width: 165px
+        height: 91px
+
+    .icon--area
+        width: 150px
+        height: 93px
+
+    +media(640px)
+        li
+            width: calc(50% - 20px)
+            float: left
+            margin-bottom: 90px
+            margin-right: 20px
+
+        li:nth-of-type(2n)
+            float: right
+            margin-right: 0
+            margin-left: 20px
+
+
+        li:nth-of-type(2n+1)
+            clear: left
+
+    img
+        display: none
+
+        +media(640px)
+            display: block
+            max-width: 100%
+            margin: 0 auto 25px
+
+    strong
+        @extend .h3
+        @extend %color--brown
+
+    span
+        max-width: 250px
+        display: inline-block

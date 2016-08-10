@@ -39,7 +39,7 @@
 </div>
 <div id="floor--3" class="floor floor--padded floor--stripe floor--brown">
 	<div class="floor__inner">
-		<p>Pomůžme vám ušetřit až&nbsp;21&nbsp;900&nbsp;Kč</p><a href="#" class="button button--white">Chci se dozvědět více</a>
+		<p>Pomůžeme vám ušetřit až&nbsp;21&nbsp;900&nbsp;Kč</p><a href="#floor--6" class="button button--white scrollto">Chci se dozvědět více</a>
 	</div>
 </div>
 <div id="floor--4" class="floor floor--grey">
@@ -48,22 +48,22 @@
 		<div class="clients">
 			<article class="clients__item">
 				<div class="client">
-					<p class="client__text">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p><span class="client__author">Lucie Stránská, účetní <br>Pardubice</span>
+					<p class="client__text">Pan Dlouhý je&nbsp;velmi vnímavý a&nbsp;po&nbsp;pár dotazech si ihned udělal obrázek o&nbsp;mé situaci a&nbsp;neskutečně mi pomohl. Rozhodně bych neměnila a&nbsp;vím , že&nbsp;se&nbsp;na&nbsp;něho mohu kdykoliv obrátit. Poprvé mám v&nbsp;někoho důvěru. A&nbsp;za&nbsp;to&nbsp;moc děkuji.</p><span class="client__author">Lucie Stránská, účetní <br>Pardubice</span>
 				</div>
 			</article>
 			<article class="clients__item">
 				<div class="client">
-					<p class="client__text">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p><span class="client__author">Štěpán Kreibich, dispečer <br>Hradec Králové</span>
+					<p class="client__text">Nejenom touto cestou a&nbsp;ne naposledy bych chtěl poděkovat za&nbsp;více než profesionální přístup pana Jana Dlouhého.&nbsp;Je&nbsp;naprosto patrné, že&nbsp;svou práci dělá především s&nbsp;naprostým ohledem na&nbsp;klienta.</p><span class="client__author">Štěpán Kreibich, dispečer <br>Hradec Králové</span>
 				</div>
 			</article>
 			<article class="clients__item">
 				<div class="client">
-					<p class="client__text">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p><span class="client__author">Lucie Stránská, účetní 2 <br>Pardubice</span>
+					<p class="client__text">Muž na&nbsp;svém místě, mám-li být stručný.&nbsp;Pan Jan Dlouhý jednal po&nbsp;celou dobu naší spolupráce naprosto seriózně, trpělivě a&nbsp;vstřícně. Rozhodně doporučuji všem potenciálním zájemcům využít jeho služeb.</p><span class="client__author">David Závozný, IT pracovník <br>Chrudim</span>
 				</div>
 			</article>
 			<article class="clients__item">
 				<div class="client">
-					<p class="client__text">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p><span class="client__author">Štěpán Kreibich, dispečer 2 <br>Hradec Králové</span>
+					<p class="client__text">Chtěla bych Vám moc poděkovat za&nbsp;zprostředkování hypotéky. Ráda Vás všude doporučím a&nbsp;všude Vás budu jen&nbsp;a&nbsp;jen&nbsp;chválit... :) Přeji Vám spoustu spokojených klientů :)</p><span class="client__author">Eliška Hůlková, PR manager<br>Pardubice</span>
 				</div>
 			</article>
 		</div>
@@ -72,7 +72,7 @@
 <div id="floor--5" class="floor">
 	<div class="floor__inner">
 		<h2>Naši partneři</h2>
-		<div class="partners"><a href="#" class="partner"><img src="http://satyr.io/120x60" alt class="partner__image"><img src="http://satyr.io/120x60/red" alt class="partner__image"></a><a href="#" class="partner"><img src="http://satyr.io/142x72" alt class="partner__image"><img src="http://satyr.io/142x72/blue" alt class="partner__image"></a><a href="#" class="partner"><img src="http://satyr.io/90x90" alt class="partner__image"><img src="http://satyr.io/90x90/gold" alt class="partner__image"></a><a href="#" class="partner"><img src="http://satyr.io/120x60" alt class="partner__image"><img src="http://satyr.io/120x60/pink" alt class="partner__image"></a><a href="#" class="partner"><img src="http://satyr.io/142x72" alt class="partner__image"><img src="http://satyr.io/142x72/green" alt class="partner__image"></a><a href="#" class="partner"><img src="http://satyr.io/90x90" alt class="partner__image"><img src="http://satyr.io/90x90/blue" alt class="partner__image"></a></div>
+		<div class="partners"><a href="#" class="partner"><img src="../img/logos/akcenta.jpg" alt="Akcenta" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/ceska-sporitelna-stavebni-sporitelna.jpg" alt="ČSSS" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/ceskasporitelna.jpg" alt="Česká spořitelna" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/csob.jpg" alt="ČSOB" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/equabank.jpg" alt="Equabank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/expobank.jpg" alt="Expobank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/ge-money-bank.jpg" alt="GE Money Bank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/hypotecni-banka.jpg" alt="Hypotéční banka" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/kb.jpg" alt="KB" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/mbank.jpg" alt="mBank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/modra-pyramida.jpg" alt="Modrá pyramida" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/oberbank.jpg" alt="Oberbank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/raiffeisen-bank.jpg" alt="Raiffeisen Bank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/raiffeisen-bank-stavebni-sporitelna.jpg" alt="Raiffeisen Bank Stavební spořitelna" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/sberbank.jpg" alt="Sberbank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/unicredit-bank.jpg" alt="UniCredit Bank" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/wustenrot.jpg" alt="Wustenrot" class="partner__image"></a><a href="#" class="partner"><img src="../img/logos/wustenrot-hypotecnibanka.jpg" alt="Wustenrot hypo" class="partner__image"></a></div>
 	</div>
 </div>
 <div id="floor--6" class="floor floor--padded">

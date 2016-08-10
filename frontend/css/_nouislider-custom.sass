@@ -1,0 +1,47 @@
+.noUi-background
+    height: 4px
+    border: 0
+    border-radius: 0
+    box-shadow: none
+
+.noUi-base
+    background: $color--brown
+
+.noUi-origin
+    background: $color--grey--dark
+    border-top: 2px solid $color--white
+
+.noUi-horizontal .noUi-handle
+    +size(20px)
+    border-radius: 50%
+    top: -10px
+    left: -10px
+    background: $color--brown--alt
+    border: 0
+    box-shadow: 0 0 0 5px rgba(#715509, 0)
+    +transition(box-shadow 1s)
+    cursor: pointer
+
+    &:before,
+    &:after
+        display: none
+
+.noUi-handle.noUi-active,
+.noUi-handle:hover
+    box-shadow: 0 0 0 5px rgba(#715509, .2)
+
+.slider-value
+    position: absolute
+    top: 130%
+    left: 50%
+    white-space: nowrap
+    color: $color--brown
+    +transform(translateX(-50%))
+    transition: margin .2s ease-out
+
+.min-range .slider-value
+    //transform: translateX(calc(-50% + 30px))
+    margin-left: 30px
+.max-range .slider-value
+    //transform: translateX(-30px)
+    margin-left: -30px
