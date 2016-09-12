@@ -28,9 +28,9 @@ $(document).ready(() => {
         $this.closest('.tabs__header__item').addClass('tabs__header__item--active');
 
         if($this.attr('href').indexOf('1') > -1) {
-            $('#hypoType_1').trigger('click').blur();
+            $('#lead_type').val($('#lead_type').data('value-buy'));
         } else {
-            $('#hypoType_2').trigger('click').blur();
+            $('#lead_type').val($('#lead_type').data('value-refinance'));
         }
     });
 

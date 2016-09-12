@@ -35,23 +35,6 @@
         <div class="form__row form__row--margin-bottom<?php echo $form['contact']->hasError() ?  ' form_row--error' : '' ?>">
             <?php echo $form['contact']->render(array('placeholder' => 'Telefon nebo e-mail')) ?>
         </div>
-
-        <?php
-        /*
-         * EDIT - start
-         * - taby se ted uz nechovaji jako taby, ale jen jako ovladani pro 2 radio buttony
-         * - zatim jen staticke inputy pro kontrolu chovani JS
-         * - po otestovani zmenit tridu obalovace na .hidden, tim se inputy schovaji
-         * */
-        ?>
-
-        <div class="_hidden">
-            <input type="radio" name="hypoType" id="hypoType_1" value="kupuji" checked>
-            <input type="radio" name="hypoType" id="hypoType_2" value="refinancuji">
-        </div>
-
-        <?php // EDIT - konec ?>
-
         <div class="form__row form__row--submit"><?php /* pro zobrazeni staci oddelat tridu .hidden */ ?>
             <?php $fieldMessages = array() ?>
             <?php foreach(array('name','contact') as $field): ?>

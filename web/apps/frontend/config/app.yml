@@ -1,6 +1,6 @@
 all:
   site:
-    script_version: 1
+    script_version: 2
 
   sendmail:
       host: smtp.station.cz

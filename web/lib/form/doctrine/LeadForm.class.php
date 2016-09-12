@@ -16,7 +16,7 @@ class LeadForm extends BaseLeadForm
         unset($this['created_at']);
         unset($this['updated_at']);
 
-        $this->setWidget('type', new sfWidgetFormInputHidden());
+        $this->setWidget('type', new sfWidgetFormInputHidden(array(), array('data-value-buy' => Lead::TYPE_BUY, 'data-value-refinance' => Lead::TYPE_REFINANCE)));
         $this->setWidget('amount', new sfWidgetFormInputHidden());
         $this->setWidget('answer_to_the_ultimate_question_of_life_the_universe_and_everything', new sfWidgetFormInputHidden());
 
