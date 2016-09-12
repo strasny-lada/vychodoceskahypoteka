@@ -42,6 +42,16 @@
 						Lead.cache.contactContainer.html(content);
 						Lead.formInit();
 
+						noUiSlider.create(moneyValue, {
+					        range: {
+					            'min': 350000,
+					            'max': 3000000
+					        },
+					        //snap: true,
+					        start: 400000,
+					        step: 50000
+					    });
+
 						//ga('send', 'event', 'Lead form', 'send');
 					}
 
