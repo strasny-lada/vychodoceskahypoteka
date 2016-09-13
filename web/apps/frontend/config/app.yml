@@ -5,8 +5,8 @@ all:
   sendmail:
       host: smtp.station.cz
       port: 587
-      username: 
-      password: 
+      username: developer.vychodoceskahypoteka.cz
+      password: vyN3ETnwkFLc
 
   emails:
     lead: [vitekt@email.cz]
