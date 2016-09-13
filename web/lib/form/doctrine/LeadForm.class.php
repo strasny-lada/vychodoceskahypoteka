@@ -31,7 +31,8 @@ class LeadForm extends BaseLeadForm
             'max_length' => 128
         ), array(
             'required' => 'Zadejte Vaše jméno.',
-            'invalid' => 'Jméno je příliš krátké.'
+            'min_length' => 'Jméno je příliš krátké.',
+            'max_length' => 'Jméno je příliš dlouhé.',
         )));
         $this->setValidator('contact', new sfValidatorPass());
 
