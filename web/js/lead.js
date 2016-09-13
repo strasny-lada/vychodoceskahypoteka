@@ -42,14 +42,40 @@
 						Lead.cache.contactContainer.html(content);
 						Lead.formInit();
 
+						var moneyValue = $('#moneyValue')[0];
+
 						noUiSlider.create(moneyValue, {
 					        range: {
 					            'min': 350000,
 					            'max': 3000000
 					        },
 					        //snap: true,
-					        start: 400000,
+					        start: $('#moneyValueInput').val(),
 					        step: 50000
+					    });
+
+				        moneyValue.noUiSlider.on('update', function() {
+					        if(!$('.noUi-handle-lower span').length) {
+					            $('.noUi-handle-lower').append('<span class="slider-value"></span>');
+					        }
+
+					        var moneyValueNumber = parseInt(moneyValue.noUiSlider.get());
+
+					        $('#moneyValueInput').val(moneyValueNumber);
+					        $('.slider-value').text(moneyValueNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' Kč');
+
+					        if($(window).width() < 768) {
+					            if (moneyValueNumber <= 600000) {
+					                $(moneyValue).addClass('min-range');
+					            } else {
+					                $(moneyValue).removeClass('min-range');
+					            }
+					            if (moneyValueNumber >= 2800000) {
+					                $(moneyValue).addClass('max-range')
+					            } else {
+					                $(moneyValue).removeClass('max-range');
+					            }
+					        }
 					    });
 
 						//ga('send', 'event', 'Lead form', 'send');
